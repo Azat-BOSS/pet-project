@@ -1,0 +1,55 @@
+.cover {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 70px;
+}
+
+.cover__first-block {
+  max-width: 620px;
+  margin-right: 40px;
+}
+
+.cover__title {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 124%;
+  color: #1C2323;
+}
+
+.cover__subtitle {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 45px;
+  color: #404242;
+  margin-top: 50px;
+}
+
+.cover__button {
+  height: 45px;
+  width: 140px;
+  background-color: #58A9A5;
+  color: white;
+  border-radius: 10px 10px 10px 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.cover__second-block {
+  background-image: url("../images/plants.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 700px;
+  min-height: 700px;
+}
+/*# sourceMappingURL=cover.css.map */

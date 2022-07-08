@@ -1,0 +1,89 @@
+@import '../vendor/vendor.css';
+@import '../blocks/cover/cover.scss';
+@import '../blocks/page/page.scss';
+@import '../blocks/popup-form/popup-form.scss';
+@import '../blocks/popup/popup.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/main/main.scss';
+.header {
+    @media screen and (max-width: 1200px) {
+        margin: 0 30px;
+    }
+    &_active {
+        background-color: wheat;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: .2s linear;
+        z-index: 100;
+    }
+    margin: 0 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+    }
+    &__logo {
+        width: 156px;
+        height: 53px;
+    }
+    &__inner-links {
+        display: flex;
+        @media screen and (max-width: 1020px) {
+            display: none;
+        }
+    }
+    &__inner-links_active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        bottom: 20%;
+        right: 40%;
+        transition: .2s linear;
+    }
+    &__inner-link {
+        margin-right: 85px;
+        text-decoration: none;
+        font-family: 'Poppins', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 38px;
+        color: #404242;
+    }
+    &__inner-link:first-child {
+        margin-left: 0;
+    }
+    &__button {
+        height: 45px;
+        width: 140px;
+        background-color: #58A9A5;
+        color: white;
+        border-radius: 10px;
+        font-family: 'Poppins', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 38px;
+        color: #FFFFFF;
+        @media screen and (max-width: 1020px) {
+            display: none;
+        }
+    }
+    &__burger {
+        width: 50px;
+        border-bottom: 4px solid black;
+        margin-bottom: 5px;
+        z-index: 0;
+    }
+    &__burger-button {
+        display: none;
+        flex-direction: column;
+        z-index: 0;
+        @media screen and (max-width: 1020px) {
+            display: flex;
+        }
+    }
+}

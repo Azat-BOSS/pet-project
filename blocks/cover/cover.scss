@@ -1,0 +1,102 @@
+.cover {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+    @media screen and (max-width: 705px) {
+        grid-template-columns: 1fr;
+    }
+    &__first-block {
+        max-width: 620px;
+        margin-right: 40px;
+        @media screen and (max-width: 670px) {
+            margin-right: 0;
+        }
+    }
+    &__title {
+        font-family: 'Poppins', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 124%;
+        color: #1C2323;
+        @media screen and (max-width: 1065px) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: 705px) {
+            font-size: 60px;
+            line-height: 124%;
+        }
+        @media screen and (max-width: 670px) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: 420px) {
+            font-size: 32px;
+        }
+    }
+    &__subtitle {
+        font-family: 'Poppins', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 45px;
+        color: #404242;
+        margin-top: 50px;
+        @media screen and (max-width: 870px) {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        @media screen and (max-width: 705px) {
+            font-size: 21px;
+            line-height: 45px;
+            font-weight: 500;
+        }
+        @media screen and (max-width: 670px) {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        @media screen and (max-width: 420px) {
+            font-size: 15px;
+        }
+    }
+    &__button {
+        height: 45px;
+        width: 140px;
+        background-color: #58A9A5;
+        color: white;
+        border-radius: 10px 10px 10px 0;
+        font-family: 'Poppins', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin-top: 50px;
+        @media screen and (max-width: 870px) {
+            margin-top: 20px;
+        }
+    }
+    &__second-block {
+        background-image: url('../images/plants.png');
+        background: {
+            size: contain;
+            repeat: no-repeat;
+        }
+        max-width: 700px;
+        min-height: 700px;
+        @media screen and (max-width: 705px) {
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            top: 20%;
+            opacity: .3;
+            z-index: -1000;
+        }
+        @media screen and (max-width: 670px) {
+            background-position: center center;
+            min-height: 400px;
+        }
+    }
+}
